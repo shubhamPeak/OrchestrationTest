@@ -15,4 +15,4 @@ con <- dbConnect(dbDriver("PostgreSQL"),
                  user = USERNAME,
                  password = PASSWORD
 )
-dbGetQuery(con,"INSERT INTO publish.q1 (firstname, email) VALUES ('name5','mail5@mail.com');")
+dbGetQuery(con,"INSERT INTO publish.q1 (firstname, email) VALUES ('R1','R1@mail.com');")
