@@ -16,5 +16,5 @@ if __name__ == "__main__":
                   PEAK_API_KEY = os.getenv('PEAK_API_KEY')
                  )
     engine = create_engine(url)
-    engine.execute("INSERT INTO publish.q1 (firstname, email) VALUES ('name21','mail21@mail.com');")
+    engine.execute("INSERT INTO publish.q1 (firstname, email) VALUES ('NewName','NewMail@mail.com');")
     #engine.execute("INSERT INTO publish.testqa (id ,name, email) VALUES (3,'Python3','Python3@mail.com');")
