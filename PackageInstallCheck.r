@@ -1,5 +1,6 @@
 library(RPostgreSQL);
 library(dplyr);
+library(DBI)
 ## Script to test package installation
 # Requires a connection to Redshift. 
 
