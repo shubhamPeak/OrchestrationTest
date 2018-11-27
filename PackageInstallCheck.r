@@ -37,10 +37,10 @@ conn <- DBI::dbConnect(odbc::odbc(), "common")
   ### NEED to ADD alternative connection type here
     conn <- dbConnect(dbDriver("PostgreSQL"),
                  dbname = "tenant912",
-                 host = HOST,
+                 host = Sys.getenv('REDSHIFT_HOST'),
                  port = 5439,
-                 user = USERNAME,
-                 password = PASSWORD
+                 user = Sys.getenv('USERNAME'),
+                 password = Sys.getenv('PASSWORD')
 )
 }
 
