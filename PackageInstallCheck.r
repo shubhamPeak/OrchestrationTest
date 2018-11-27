@@ -46,7 +46,7 @@ conn <- DBI::dbConnect(odbc::odbc(), "common")
 
 
 ## specifiy packages to test here 
-packages_to_test <- c('dplyr', 'fake_package') 
+packages_to_test <- c('dplyr', 'abc', 'abctools', 'abd') 
 
 
 test_packages <- data.frame(package = packages_to_test,
