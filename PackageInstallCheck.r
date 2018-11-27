@@ -39,8 +39,8 @@ conn <- DBI::dbConnect(odbc::odbc(), "common")
                  dbname = "tenant912",
                  host = Sys.getenv('REDSHIFT_HOST'),
                  port = 5439,
-                 user = Sys.getenv('USERNAME'),
-                 password = Sys.getenv('PASSWORD')
+                 user = Sys.getenv('REDSHIFT_USERNAME'),
+                 password = Sys.getenv('REDSHIFT_PASSWORD')
 )
 }
 
