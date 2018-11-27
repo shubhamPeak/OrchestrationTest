@@ -2,7 +2,7 @@
 # Requires a connection to Redshift. 
 
 ## Connection type (ODBC, POSTGRESQL)
-CONNECTION = 'ODBC'
+CONNECTION = 'POSTGRESQL'
 
 ## functions 
 check_package_installation <- function(test_packages = NULL, conn = NULL) {
