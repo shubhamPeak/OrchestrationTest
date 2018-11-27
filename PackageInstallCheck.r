@@ -33,7 +33,7 @@ conn <- DBI::dbConnect(odbc::odbc(), "common")
 } else if (CONNECTION == 'POSTGRESQL'){
   ### NEED to ADD alternative connection type here
     conn <- dbConnect(dbDriver("PostgreSQL"),
-                 dbname = "shubhamsharma",
+                 dbname = "tenant912",
                  host = HOST,
                  port = 5439,
                  user = USERNAME,
