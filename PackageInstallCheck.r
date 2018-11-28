@@ -44,6 +44,8 @@ conn <- DBI::dbConnect(odbc::odbc(), "common")
 )
 }
 
+message("is Connection valid: ",DBI::dbIsValid(conn))
+
 
 ## specifiy packages to test here 
 packages_to_test <- c('Anomalydetection', 'aws.s3', 'aws.signature', 'Caret')
