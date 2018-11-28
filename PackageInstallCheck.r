@@ -46,7 +46,8 @@ conn <- DBI::dbConnect(odbc::odbc(), "common")
 
 
 ## specifiy packages to test here 
-packages_to_test <- c('dplyr', 'abc', 'abctools', 'abd') 
+packages_to_test <- c('Anomalydetection' , 'aws.s3' , 'aws.signature' , 'Caret' , 'changepoint' , 'data.table' , 'DBI' , 'dbplyr' , 'devtools' , 'doParallel' , 'DT','FeatureHashing', 'flexdashboard' ,'Foreach' , 'forecast' , 'Ggforce' , 'ggthemes' , 'glmnet', 'httr' , 'jsonlite' , 'kableExtra' , 'Knitr' , 'Lme4' , 'lubridate' , 'Matrix' , 'Padr' , 'Parallel' , 'peaktheme' , 'Prophet' , 'RColorBrewer' , 'RCurl' , 'reshape2' ,
+'rmarkdown' , 'Roxygen2' , 'scales' , 'Shiny' , 'Shinydashboard' , 'Slackr' , 'Stats' ,  'Tibble' ,  'tidyverse' , 'tomr' , 'Tsintermittent' ,  'Xfun' ,  'xgboost' ,'Zoo' ) 
 
 
 test_packages <- data.frame(package = packages_to_test,
