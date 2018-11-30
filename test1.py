@@ -7,8 +7,8 @@ import io
 
 if __name__ == "__main__":
     url = "postgresql://{user}:{password}@{host}:{port}/{dbname}".format(
-                  dbname="punit_test_001",
-                  #dbname="testclient01",
+                  #dbname="punit_test_001",
+                  dbname="shubham1",
                   user=os.getenv("REDSHIFT_USERNAME"),
                   password=os.getenv("REDSHIFT_PASSWORD"),
                   host = os.getenv("REDSHIFT_HOST"),
@@ -16,5 +16,5 @@ if __name__ == "__main__":
                   PEAK_API_KEY = os.getenv('PEAK_API_KEY')
                  )
     engine = create_engine(url)
-    engine.execute("INSERT INTO publish.q1 (firstname, email) VALUES ('NewName','NewMail@mail.com');")
-    #engine.execute("INSERT INTO publish.testqa (id ,name, email) VALUES (3,'Python3','Python3@mail.com');")
+    #engine.execute("INSERT INTO publish.q1 (firstname, email) VALUES ('NewName','NewMail@mail.com');")
+    engine.execute("INSERT INTO publish.shubham1 (id ,name) VALUES (1,'Python1');")
