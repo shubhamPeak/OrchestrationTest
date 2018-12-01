@@ -8,7 +8,7 @@ import io
 if __name__ == "__main__":
     url = "postgresql://{user}:{password}@{host}:{port}/{dbname}".format(
                   #dbname="punit_test_001",
-                  dbname="chaljabc",
+                  dbname="shubhamjupy",
                   user=os.getenv("REDSHIFT_USERNAME"),
                   password=os.getenv("REDSHIFT_PASSWORD"),
                   host = os.getenv("REDSHIFT_HOST"),
